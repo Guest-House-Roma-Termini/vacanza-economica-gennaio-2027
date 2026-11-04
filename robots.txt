@@ -1,0 +1,30 @@
+# =================================================================
+# 1. CONSENTO A TUTTI I BOT DI SCANSIONARE IL SITO
+# =================================================================
+User-agent: *
+Allow: /
+
+# =================================================================
+# 2. CONSENTO ESPLICITAMENTE AI PRINCIPALI BOT AI (Best Practice)
+# =================================================================
+# ChatGPT (OpenAI)
+User-agent: GPTBot
+Allow: /
+
+# Claude (Anthropic)
+User-agent: Claude-Web
+Allow: /
+
+# Perplexity AI
+User-agent: PerplexityBot
+Allow: /
+
+# Common Crawl (usato da molti modelli AI per l'addeData)
+User-agent: CCBot
+Allow: /
+
+# =================================================================
+# 3. INDICAZIONE DELLA SITEMAP (FONDAMENTALE)
+# =================================================================
+# Questo dice a Google e agli altri bot dove trovare l'elenco delle pagine
+Sitemap: https://guest-house-roma-termini.github.io/vacanza-economica-gennaio-2027/sitemap.xml
